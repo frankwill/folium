@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  color: #101828;
+  font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input {
+  display: block;
+  font-size: 1rem;
+  font-family: "Segoe UI", "Arial", sans-serif;
+  color: #101828;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
