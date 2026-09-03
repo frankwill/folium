@@ -5,6 +5,7 @@
 }
 
 .content {
+  min-width: 448px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,6 +13,46 @@
   row-gap: 1rem;
 }
 
-.title {
-  font-weight: 400;
+.content > p {
+  color: var(--color-neutral-1);
+}
+
+.form > h2 {
+  margin-bottom: 1rem;
+}
+
+.form > div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.form > p {
+  color: var(--color-neutral-1);
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.form a {
+  margin-left: 2px;
+}
+
+.rememberMe {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card {
+  border: 1px solid var(--color-neutral-2);
+  overflow: hidden;
+  overflow-wrap: break-word;
+  border-radius: 14px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  background-color: white;
+}
+
+.cardContent {
+  padding: 2rem;
 }
