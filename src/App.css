@@ -1,8 +1,13 @@
 :root {
   --font-primary: "Segoe UI", "Arial", sans-serif;
-  --text-color-primary: #101828;
-  --text-color-secondary: #0A0A0A;
-  --gradient-from: #155DFC;
+
+  --color-primary: #155DFC;
+
+  --color-default: #101828;
+
+  --color-neutral-1: #4A5565;
+
+  --gradient-from: var(--color-primary);
   --gradient-to: #00A63E;
 }
 
@@ -12,8 +17,9 @@
 
 body {
   margin: 0px;
-  color: var(--text-color-primary);
+  color: var(--color-default);
   font-family: var(--font-primary);
+  background: linear-gradient(294deg, #EFF6FF 0%, #FFFFFF 50%, #F0FDF4 100%);
 }
 
 h1,
@@ -34,5 +40,5 @@ input {
   display: block;
   font-size: 1rem;
   font-family: var(--font-primary);
-  color: var(--text-color-primary);
+  color: var(--color-default);
 }
