@@ -1,11 +1,19 @@
+:root {
+  --font-primary: "Segoe UI", "Arial", sans-serif;
+  --text-color-primary: #101828;
+  --text-color-secondary: #0A0A0A;
+  --gradient-from: #155DFC;
+  --gradient-to: #00A63E;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0px;
-  color: #101828;
-  font-family: "Segoe UI", "Arial", sans-serif;
+  color: var(--text-color-primary);
+  font-family: var(--font-primary);
 }
 
 h1,
@@ -25,6 +33,6 @@ button,
 input {
   display: block;
   font-size: 1rem;
-  font-family: "Segoe UI", "Arial", sans-serif;
-  color: #101828;
+  font-family: var(--font-primary);
+  color: var(--text-color-primary);
 }
