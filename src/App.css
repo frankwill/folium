@@ -6,6 +6,7 @@
   --color-default: #101828;
 
   --color-neutral-1: #4A5565;
+  --color-neutral-2: #E5E7EB;
 
   --gradient-from: var(--color-primary);
   --gradient-to: #00A63E;
@@ -19,7 +20,12 @@ body {
   margin: 0px;
   color: var(--color-default);
   font-family: var(--font-primary);
-  background: linear-gradient(294deg, #EFF6FF 0%, #FFFFFF 50%, #F0FDF4 100%);
+  background: linear-gradient(294deg, #F0FDF4 0%, #FFFFFF 50%, #EFF6FF 100%);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
 }
 
 h1,
@@ -28,6 +34,7 @@ h3,
 h4,
 p {
   margin: 0;
+  font-weight: 400;
 }
 
 img {
