@@ -9,30 +9,23 @@
   min-width: 150px;
   cursor: pointer;
   font-weight: 600;
+  min-width: 100%;
 }
 
-.primary {
-  position: relative;
-  isolation: isolate;
+.button.primary {
   background: linear-gradient(90deg, var(--gradient-from), var(--gradient-to));
   border: none;
-  padding: 8px 12px;
   color: white;
-  border-radius: 8px;
-  min-width: 150px;
-  cursor: pointer;
-  font-weight: 600;
 }
 
-.button,
-.primary {
+.button {
   position: relative;
   isolation: isolate;
   overflow: hidden;
 }
 
 .button::before,
-.primary::before {
+.button.primary::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -46,12 +39,12 @@
   opacity: .5;
 }
 
-.primary:hover::before {
+.button.primary:hover::before {
   opacity: 1;
 }
 
 .button.appendIcon,
-.primary.appendIcon {
+.button.primary.appendIcon {
   display: flex;
   column-gap: 8px;
   align-items: center;
