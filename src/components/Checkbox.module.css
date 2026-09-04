@@ -12,4 +12,5 @@
 
 .label {
   line-height: 1.1;
+  user-select: none;
 }
