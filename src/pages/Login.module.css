@@ -17,6 +17,10 @@
   color: var(--color-neutral-1);
 }
 
+.logo {
+  user-select: none;
+}
+
 .form > h2 {
   margin-bottom: 1rem;
 }

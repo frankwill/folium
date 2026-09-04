@@ -8,7 +8,7 @@ const Login = () => {
   return (
     <header className={styles.container}>
       <div className={styles.content}>
-        <img src={logo} alt="Logotipo Folium" />
+        <img className={styles.logo} src={logo} alt="Logotipo Folium" />
         <h1 className={styles.title}>Folium</h1>
         <p>Acompanhe a sua jornada de leitura</p>
         <div className={styles.card}>
