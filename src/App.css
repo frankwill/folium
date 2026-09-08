@@ -1,16 +1,16 @@
 :root {
   --font-primary: "Segoe UI", "Arial", sans-serif;
 
-  --color-primary: #155DFC;
+  --color-primary: #155dfc;
 
   --color-default: #101828;
 
-  --color-neutral-1: #4A5565;
-  --color-neutral-2: #E5E7EB;
-  --color-neutral-3: #F9FAFB;
+  --color-neutral-1: #4a5565;
+  --color-neutral-2: #e5e7eb;
+  --color-neutral-3: #f9fafb;
 
   --gradient-from: var(--color-primary);
-  --gradient-to: #00A63E;
+  --gradient-to: #00a63e;
 }
 
 * {
@@ -21,7 +21,8 @@ body {
   margin: 0px;
   color: var(--color-default);
   font-family: var(--font-primary);
-  background: linear-gradient(294deg, #F0FDF4 0%, #FFFFFF 50%, #EFF6FF 100%);
+  background: linear-gradient(294deg, #f0fdf4 0%, #ffffff 50%, #eff6ff 100%)
+    no-repeat;
 }
 
 a {
@@ -51,6 +52,20 @@ input {
   color: var(--color-default);
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  /* min-height: calc(100vh + 64px); */
+  min-height: 100vh;
+}
+
 .container {
-  max-width: 1500px;
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.appMain {
+  flex: 1;
+  margin-top: 2rem;
 }
