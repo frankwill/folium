@@ -1,7 +1,16 @@
 import React from "react"
 import styles from "./Input.module.css"
 
-const Input = ({ id, label, type, prependIcon, className, ...props }) => {
+const Input = ({
+  name,
+  label,
+  type,
+  value,
+  onChange,
+  prependIcon,
+  className,
+  placeholder,
+}) => {
   const [isVisible, setIsVisible] = React.useState(false)
   const [typeInput, setTypeInput] = React.useState(() =>
     type === "password" ? "password" : "text",
@@ -19,12 +28,24 @@ const Input = ({ id, label, type, prependIcon, className, ...props }) => {
 
   return (
     <div className={className}>
-      <label className={styles.label} htmlFor={id}>
+      <label className={styles.label} htmlFor={name}>
         {label}
       </label>
       <div className={styles.content}>
-        {prependIcon && <span className={`material-icons-outlined ${styles.prependIcon}`}>{prependIcon}</span>}
-        <input className={styles.input} id={id} type={typeInput} {...props} />
+        {prependIcon && (
+          <span className={`material-icons-outlined ${styles.prependIcon}`}>
+            {prependIcon}
+          </span>
+        )}
+        <input
+          className={styles.input}
+          id={name}
+          name={name}
+          type={typeInput}
+          value={value}
+          onChange={onChange}
+          placeholder={placeholder}
+        />
         {type === "password" && (
           <button
             type="button"
