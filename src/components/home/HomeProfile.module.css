@@ -7,3 +7,17 @@
   height: 40px;
   border-radius: 50%;
 }
+
+.profileMenuButton {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .profile {
+    display: none;
+  }
+
+  .profileMenuButton {
+    display: flex;
+  }
+}
