@@ -10,7 +10,7 @@ const Login = () => {
 
   function handleSubmit(e) {
     e.preventDefault()
-    navigate('/home')
+    navigate("/home")
   }
 
   return (
@@ -28,12 +28,14 @@ const Login = () => {
                   id="email"
                   label="E-mail"
                   type="email"
+                  name="email"
                   placeholder="Digite o seu e-mail"
                 />
                 <Input
                   id="password"
                   label="Senha"
                   type="password"
+                  name="password"
                   placeholder="Digite a sua senha"
                 />
                 <div className={styles.rememberMe}>
