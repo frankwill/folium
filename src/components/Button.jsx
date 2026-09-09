@@ -1,9 +1,9 @@
 import styles from "./Button.module.css"
 
-const Button = ({ title, appendIcon, color, ...props }) => {
+const Button = ({ title, appendIcon, color, className, ...props }) => {
   return (
     <button
-      className={`${styles.button} ${styles.appendIcon} ${styles[color]}`}
+      className={`${styles.button} ${styles.appendIcon} ${styles[color]} ${className}`}
       {...props}
     >
       {appendIcon && (
