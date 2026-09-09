@@ -21,24 +21,28 @@ const Home = () => {
       title: "The Midnight Library",
       author: "Matt Haig",
       status: "1",
+      stars: 5
     },
     {
       id: 2,
       title: "Atomic Habits",
       author: "James Clear",
       status: "0",
+      stars: null
     },
     {
       id: 3,
       title: "Project Hail Mary",
       author: "Andy Weir",
       status: "0",
+      stars: null
     },
     {
       id: 4,
       title: "The Silent Patient",
       author: "Alex Michaelides",
       status: "2",
+      stars: 4
     },
   ]
 
@@ -67,6 +71,7 @@ const Home = () => {
               tabs={tabs}
               selectedTab={selectedTab}
               onChange={setSelectedTab}
+              className={styles.tabs}
             />
             <BookList books={filteredBooks} />
           </section>
