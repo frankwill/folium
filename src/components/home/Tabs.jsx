@@ -1,13 +1,13 @@
 import styles from "./Tabs.module.css"
 
-const Tabs = ({ tabs, selectedTab, onChange }) => {
+const Tabs = ({ tabs, selectedTab, onChange, className }) => {
 
   function handleSelectedTab({ target }) {
     onChange(target.value)
   }
 
   return (
-    <div className={`${styles.wrapper}`}>
+    <div className={`${styles.wrapper} ${className}`}>
       <div className={styles.container}>
         {tabs.map((tab) => (
           <button
