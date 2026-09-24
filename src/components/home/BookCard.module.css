@@ -1,0 +1,44 @@
+.cardContainer {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 16px;
+  background-color: white;
+  border: 1px solid var(--color-neutral-2);
+  padding: 1rem;
+  border-radius: 14px;
+}
+
+.cardImage {
+  border-radius: 10px;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.cardInfos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {}
+
+.author {
+  color: var(--color-neutral-1);
+  font-size: 14px;
+}
+
+.cardChip {
+  align-self: baseline;
+}
+
+.buttonIcons {
+  width: 30px;
+  height: 30px;
+}
+
+.buttonIcons > span {
+  font-size: 20px;
+}
