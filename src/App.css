@@ -9,6 +9,11 @@
   --color-neutral-2: #e5e7eb;
   --color-neutral-3: #f9fafb;
 
+  --color-green-1: #008236;
+  --color-green-2: #B9F8CF;
+  --color-green-3: #DCFCE7;
+
+
   --gradient-from: var(--color-primary);
   --gradient-to: #00a63e;
 }
